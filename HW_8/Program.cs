@@ -87,7 +87,7 @@ while (true)
 
 static Node FindNode(Node rootToFind, int salary)
 {
-    if (salary < rootToFind.Salary)
+    if (salary > rootToFind.Salary)
     {
         if (rootToFind.Left != null)
         {
@@ -97,7 +97,7 @@ static Node FindNode(Node rootToFind, int salary)
         return null;
     }
 
-    if (salary > rootToFind.Salary)
+    if (salary < rootToFind.Salary)
     {
         if (rootToFind.Right != null)
         {
